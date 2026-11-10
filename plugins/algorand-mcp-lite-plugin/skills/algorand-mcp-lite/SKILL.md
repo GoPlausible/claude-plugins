@@ -4,7 +4,7 @@ description: >
   Comprehensive guide for interacting with Algorand blockchain via Algorand Remote MCP Lite (Wallet Edition) —
   a managed MCP server with 59 tools for wallet operations, ALGO/ASA transactions, atomic groups, account queries,
   NFD lookups, Haystack Router DEX-aggregated swaps, Alpha Arcade prediction markets, Pera asset verification,
-  ARC-26 QR codes, transaction receipts, AP2 payment mandates, and rich structured-data UI widgets.
+  ARC-90 QR codes, transaction receipts, AP2 payment mandates, and rich structured-data UI widgets.
   Use this skill whenever working with Algorand Remote MCP Lite tools, building agents that interact with Algorand
   via MCP, querying Algorand accounts/assets/transactions, sending payments, swapping tokens, trading prediction
   markets, generating payment QR codes or receipts, or managing an MCP-based Algorand wallet. Also use when the
@@ -290,11 +290,11 @@ Slippage is verified on the **final output** of the swap, not on individual hops
 | `alpha_claim` | Claim USDC from a resolved market |
 | `alpha_propose_match` | Propose match between compatible orders |
 
-### 12. ARC-26 URI & QR Code (1 tool)
+### 12. ARC-90 URI & QR Code (1 tool)
 
 | Tool | Purpose |
 |------|---------|
-| `generate_algorand_qrcode` | Generate ARC-26 Algorand URI and QR code for payment/transfer |
+| `generate_algorand_qrcode` | Generate ARC-90 Algorand URI and QR code for payment/transfer |
 
 **Parameters:**
 ```

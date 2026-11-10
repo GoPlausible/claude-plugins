@@ -1,6 +1,6 @@
 # Algorand Remote MCP Plugin
 
-This plugin provides **Algorand Remote MCP ** — a managed remote MCP server with 95 tools and 14 resources for wallet operations, ALGO/ASA transactions, atomic groups, blockchain queries, NFD lookups, Haystack Router DEX-aggregated swaps, Alpha Arcade prediction markets, Pera asset verification, ARC-26 QR codes, transaction receipts, x402 transactions, AP2 mandates, Algorand development tools and much more.
+This plugin provides **Algorand Remote MCP ** — a managed remote MCP server with 95 tools and 14 resources for wallet operations, ALGO/ASA transactions, atomic groups, blockchain queries, NFD lookups, Haystack Router DEX-aggregated swaps, Alpha Arcade prediction markets, Pera asset verification, ARC-90 QR codes, transaction receipts, x402 transactions, AP2 mandates, Algorand development tools and much more.
 
 ## Required — Load Skill First
 

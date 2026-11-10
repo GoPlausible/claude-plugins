@@ -1,6 +1,6 @@
 # Algorand Remote MCP Lite Plugin
 
-This plugin provides **Algorand Remote MCP Lite (Wallet Edition)** — a managed remote MCP server with 59 tools for wallet operations, ALGO/ASA transactions, atomic groups, blockchain queries, NFD lookups, Haystack Router DEX-aggregated swaps, Alpha Arcade prediction markets, Pera asset verification, ARC-26 QR codes, transaction receipts, and rich UI widgets.
+This plugin provides **Algorand Remote MCP Lite (Wallet Edition)** — a managed remote MCP server with 59 tools for wallet operations, ALGO/ASA transactions, atomic groups, blockchain queries, NFD lookups, Haystack Router DEX-aggregated swaps, Alpha Arcade prediction markets, Pera asset verification, ARC-90 QR codes, transaction receipts, and rich UI widgets.
 
 ## Required — Load Skill First
 

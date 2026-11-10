@@ -73,7 +73,7 @@ Skills are auto-discovered — Claude invokes them based on task context or via 
 - **Alpha Arcade** (15) — Read: `alpha_get_live_markets`, `alpha_get_reward_markets`, `alpha_get_market`, `alpha_get_orderbook`, `alpha_get_open_orders`, `alpha_get_positions`. Trade: `alpha_create_limit_order`, `alpha_create_market_order`, `alpha_cancel_order`, `alpha_amend_order`, `alpha_propose_match`, `alpha_split_shares`, `alpha_merge_shares`, `alpha_claim`
 - **x402 Payments** (2) — `x402_discover_payment_requirements`, `make_http_request_with_x402` — probe an x402-protected endpoint for payment requirements, then pay-and-fetch in one call. The MCP tool handles atomic-group construction, signing, base64 encoding, and PAYMENT-SIGNATURE assembly internally.
 - **x402 Bazaar Discovery** (3) — `bazaar_list`, `bazaar_search`, `bazaar_get_resource_details` — browse and search the Bazaar discovery directory hosted by the configured facilitator (`facilitator.goplausible.xyz` by default) to find paid resources cataloged across the x402 ecosystem before calling `make_http_request_with_x402`.
-- **ARC-26 URI** (1) — `generate_algorand_qrcode`
+- **ARC-90 URI** (1) — `generate_algorand_qrcode`
 - **Knowledge** (1) — `get_knowledge_doc` (categories: `arcs`, `sdks`, `algokit`, `algokit-utils`, `tealscript`, `puya`, `liquid-auth`, `python`, `developers`, `clis`, `nodes`, `details`)
 
 > For x402 + Bazaar workflows, load the dedicated `algorand-x402-payment` skill.
@@ -136,9 +136,9 @@ On HTTP 402 with `accepts[]`: parse requirements → map CAIP-2 → `wallet_get_
 
 > **CRITICAL — x402 Base64 blob handling**: When constructing `PAYMENT-SIGNATURE` via shell/curl, NEVER manually copy-paste base64 blobs inline into JSON. Even a single character corruption causes "signature does not match sender" errors. ALWAYS store blobs (`bytes` from `encode_unsigned_transaction`, `blob` from `wallet_sign_transaction`) in separate shell variables first, then interpolate via `${VAR}`. Use `printf '%s'` and `tr -d '\n'` to strip macOS base64 newlines.
 
-## QR Code Display (ARC-26 URI)
+## QR Code Display (ARC-90 URI)
 
-When generating QR codes with `generate_algorand_qrcode`, the tool returns: `qr` (UTF-8 text QR code), `uri` (the `algorand://` URI), `link` (shareable hosted QR URL), `expires_in` (link validity period).
+`generate_algorand_qrcode` builds an ARC-90 payment URI (ARC-90 supersedes ARC-90). Pass the `network` the payment is for: testnet and localnet URIs carry the genesis hash (`algorand://gh:<genesis hash>/<address>?...`), mainnet URIs have none. When generating QR codes with `generate_algorand_qrcode`, the tool returns: `qr` (UTF-8 text QR code), `uri` (the `algorand://` URI), `link` (shareable hosted QR URL), `expires_in` (link validity period).
 
 **After calling the tool, include all of the following in your response:**
 

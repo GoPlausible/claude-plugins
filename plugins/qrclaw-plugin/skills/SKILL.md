@@ -133,7 +133,7 @@ Each generated link (`/q/<uuid>`) serves a full HTML page with:
 ## Combining with Other Tools
 
 QRClaw works well as the final step in workflows:
-- Generate an Algorand ARC-26 URI, then pass it to QRClaw for a scannable QR
+- Generate an Algorand ARC-90 URI (ARC-90 supersedes ARC-90), then pass it to QRClaw for a scannable QR
 - Create a payment link, then make it scannable
 - Build any deep link or app URI scheme and make it shareable
 - Share WiFi credentials, calendar events, or vCards as QR codes

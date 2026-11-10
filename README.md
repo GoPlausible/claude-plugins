@@ -138,7 +138,7 @@ Or add to `~/.claude/settings.json`:
 | Haystack Router | 3 | `api_haystack_get_swap_quote`, `api_haystack_execute_swap` |
 | Pera Asset Verification | 3 | `api_pera_asset_verification_status`, `api_pera_verified_asset_search` |
 | Alpha Arcade | 15 | `alpha_get_live_markets`, `alpha_create_market_order`, `alpha_get_positions` |
-| ARC-26 URI | 1 | `generate_algorand_qrcode` |
+| ARC-90 URI | 1 | `generate_algorand_qrcode` |
 | Knowledge | 1 | `get_knowledge_doc` |
 
 ## x402 Payment Protocol

@@ -5,7 +5,7 @@ description: >
   a managed MCP server with wallet management (HashiCorp Vault signing), ALGO/ASA transactions,
   atomic groups, smart contract deployment, account queries, NFD lookups, Tinyman AMM swaps,
   Haystack Router best-price DEX aggregation, Alpha Arcade prediction markets, Pera asset verification,
-  ARC-26 QR codes, and Algorand developer knowledge base. Use this skill when the user asks about
+  ARC-90 QR codes, and Algorand developer knowledge base. Use this skill when the user asks about
   Algorand Remote MCP, server-side wallet operations, remote MCP blockchain interaction, or any
   task involving the Algorand Remote MCP tools. This skill covers mainnet operations with
   server-side signing — all tool names referenced here omit the MCP prefix for readability.
@@ -198,7 +198,7 @@ Haystack Router is a DEX aggregator and smart order routing protocol on Algorand
 | `bytes_to_bigint` / `bigint_to_bytes` | Convert between bytes and BigInt |
 | `sign_bytes` / `verify_bytes` | Sign and verify arbitrary bytes |
 | `compile_teal` / `disassemble_teal` | Compile and disassemble TEAL programs |
-| `generate_algorand_uri` | Generate ARC-26 Algorand URI / QR code |
+| `generate_algorand_uri` | Generate ARC-90 Algorand URI / QR code |
 
 ### 11. Knowledge Base
 | Tool | Purpose |
@@ -402,7 +402,7 @@ api_nfd_get_nfds_for_addresses {
 
 ### Top-Up QR Code (Insufficient Funds)
 ```
-// Generate ARC-26 QR code for easy funding
+// Generate ARC-90 QR code for easy funding
 generate_algorand_uri {
   address: "[wallet_address]",
   amount: 5000000,          // Required amount including MBR and fees
